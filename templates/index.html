@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accident Severity Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Accident Severity Prediction</h1>
+        <form method="POST">
+            <div class="form-group">
+                <label for="light_conditions">Light Conditions:</label>
+                <select id="light_conditions" name="light_conditions" required>
+                    <option value="0">Daylight</option>
+                    <option value="1">Dark - Street Lights On</option>
+                    <option value="2">Dark - No Street Lights</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="num_casualties">Number of Casualties:</label>
+                <input type="number" id="num_casualties" name="num_casualties" min="0" placeholder="Enter number of casualties" required>
+            </div>
+
+            <div class="form-group">
+                <label for="num_vehicles">Number of Vehicles:</label>
+                <input type="number" id="num_vehicles" name="num_vehicles" min="1" placeholder="Enter number of vehicles" required>
+            </div>
+
+            <div class="form-group">
+                <label for="road_surface">Road Surface Conditions:</label>
+                <select id="road_surface" name="road_surface" required>
+                    <option value="0">Dry</option>
+                    <option value="1">Wet</option>
+                    <option value="2">Snow</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="speed_limit">Speed Limit (km/h):</label>
+                <input type="number" id="speed_limit" name="speed_limit" min="0" placeholder="Enter speed limit" required>
+            </div>
+
+            <div class="form-group">
+                <label for="urban_rural">Urban or Rural Area:</label>
+                <select id="urban_rural" name="urban_rural" required>
+                    <option value="0">Rural</option>
+                    <option value="1">Urban</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="vehicle_type">Vehicle Type:</label>
+                <select id="vehicle_type" name="vehicle_type" required>
+                    <option value="0">Car</option>
+                    <option value="1">Motorcycle</option>
+                    <option value="2">Bus</option>
+                    <option value="3">Truck</option>
+                </select>
+            </div>
+
+            <button type="submit">Predict</button>
+        </form>
+
+        {% if prediction %}
+            <div class="result">
+                <h2>Predicted Severity: <span>{{ prediction }}</span></h2>
+            </div>
+        {% endif %}
+    </div>
+</body>
+</html>
