@@ -11,16 +11,22 @@ CRASHLYTICS is a cutting-edge accident analysis system that integrates powerful 
 
 
 Machine Learning-powered Analysis: Leverages XGBoost for accurate accident severity predictions.
+
 Interactive Dashboards: Power BI for real-time visualizations of accident trends and insights.
+
 Trend Analysis: Identifies patterns and root causes of traffic accidents.
+
 Scalable & Modular Design: Easy to extend and customize for various use cases.
 
 🚀 Tech Stack
 
 
 Programming Language: Python 
+
 Frontend: HTML, CSS 
+
 Machine Learning: XGBoost
+
 Business Intelligence: Power BI
 
 📊 Dashboards & Insights
