@@ -1,4 +1,4 @@
-RASHLYTICS 🚗📊
+CRASHLYTICS 🚗📊
 An advanced accident analysis system leveraging machine learning and business intelligence.
 
 📖 Overview
@@ -21,16 +21,17 @@ Here are some sample outputs and visualizations from the system:
 
 
 1. Accident Severity Analysis
-Accident Severity Analysis <!-- Replace with actual image path -->
 ![Screenshot 2025-02-22 055741](https://github.com/user-attachments/assets/5bcc8549-54d2-4cd6-b157-2d60d96efdbd)
 
 2. Time-based Trends
-Time-based Trends <!-- Replace with actual image path -->
+![Screenshot 2025-02-22 060006](https://github.com/user-attachments/assets/49246755-d27a-404f-8306-f1230db3ba8f)
+
 
 3. Geographic Hotspots
-Geographic Hotspots <!-- Replace with actual image path -->
+![Screenshot 2025-02-22 055924](https://github.com/user-attachments/assets/7a5088f1-dad2-498b-ad9f-4678b174cc98)
 
-Note: Store your images in a folder (e.g., assets/images/) and reference them correctly in the README.
+4.Severity and cause analysis
+![Screenshot 2025-02-22 060038](https://github.com/user-attachments/assets/23485f0b-1291-466f-99b1-e86877433331)
 
 📈 How It Works
 Data Ingestion: Accident data is collected and preprocessed.
